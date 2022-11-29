@@ -9,7 +9,12 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract ZToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
-    string uriData = "https://gateway.pinata.cloud/ipfs/QmcXXF1hL1pS584htyVMotTFXBtEXVgVGh5nd8E1Af2maY";
+    string[] uriData = [
+    "https://gateway.pinata.cloud/ipfs/QmcXXF1hL1pS584htyVMotTFXBtEXVgVGh5nd8E1Af2maY",
+    "https://gateway.pinata.cloud/ipfs/QmRaXmWC3JXLskGvVpRVZopKyNzCH7o4Pew7vD4c2V8g9H",
+    "https://gateway.pinata.cloud/ipfs/QmfK6JvxPdZ4nCJbMkK8zGRPq8V4diUMDRNHic9BwmodvT",
+    "https://gateway.pinata.cloud/ipfs/QmdLjmUpbx1pv4j2ESeVhhw3D2MJhsmD4cF449FG35ZLyS"
+    ];
 
     Counters.Counter private _tokenIdCounter;
 
@@ -19,7 +24,11 @@ contract ZToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
-        _setTokenURI(tokenId, uriData);
+        _setTokenURI(tokenId, uriData[0]);
+    }
+    //our function
+    function updateUriData(uint256 tokenId, string memory _tokenURI) public onlyOwner {
+        _setTokenURI(tokenId, _tokenURI);
     }
 
     function _beforeTokenTransfer(address from, address to, uint256 tokenId, uint256 batchSize)
