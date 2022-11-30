@@ -1,5 +1,5 @@
 # DNFTs [Dinamic Non Fungible Token]()
-![Logo](https://cdn.pixabay.com/photo/2022/02/28/08/15/geometric-shapes-7038730__340.jpg)
+[Logo](https://cdn.pixabay.com/photo/2022/02/28/08/15/geometric-shapes-7038730__340.jpg)
 Creación de un NFT dinámico implementando los servicios de Pinata cloud, OpenSea testnet y Metamask.
 
 Aquí te explico los pasos esenciales para la creación de tu NFT dinámico que cambie cada vez que el usuario realicé una acción determinada, sigue cada paso 😉.
