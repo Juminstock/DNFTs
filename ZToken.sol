@@ -10,10 +10,10 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract ZToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     string[] uriData = [
-    "https://gateway.pinata.cloud/ipfs/QmcXXF1hL1pS584htyVMotTFXBtEXVgVGh5nd8E1Af2maY",
-    "https://gateway.pinata.cloud/ipfs/QmRaXmWC3JXLskGvVpRVZopKyNzCH7o4Pew7vD4c2V8g9H",
-    "https://gateway.pinata.cloud/ipfs/QmfK6JvxPdZ4nCJbMkK8zGRPq8V4diUMDRNHic9BwmodvT",
-    "https://gateway.pinata.cloud/ipfs/QmdLjmUpbx1pv4j2ESeVhhw3D2MJhsmD4cF449FG35ZLyS"
+    "https://gateway.pinata.cloud/ipfs/QmU3RhRWq8P2qtawD5cmTkzH9drsGgrLev72z2BzwuEcLP",
+    "https://gateway.pinata.cloud/ipfs/QmVaomyVLkVLX2k2JYXo8eQ9gqLJiZpoA7SUsU6wuDdiRK",
+    "https://gateway.pinata.cloud/ipfs/QmUynUnAuatYwfMVmc5qBCS9iNW2fEpzhunuC4YgLouZe6",
+    "https://gateway.pinata.cloud/ipfs/QmW9sLSVB4oZPsEbwAW5j6HUevg5KBnFZAUeJZVKAwJDic"
     ];
 
     Counters.Counter private _tokenIdCounter;
