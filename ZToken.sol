@@ -26,7 +26,7 @@ contract ZToken is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uriData[0]);
     }
-    //our function
+    //Change metada function
     function updateUriData(uint256 _tokenId, string memory _uriData) public onlyOwner {
         _setTokenURI(_tokenId, _uriData);
     }
