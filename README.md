@@ -11,7 +11,8 @@ Aquí te explico los pasos esenciales para la creación de tu NFT dinámico que 
 6. Al tener listo el Script, el paso siguiente será ejecutarlo en la Testnet de Ethereum, para ello utilizaremos Goerli. 👀 Para pedir ETHs de prueba puedes hacerlo a través de la [Faucet de Alchemy](https://goerlifaucet.com/).
 7. Para poner en prueba tu smart contracts, abriremos la página de [testnet de Opensea](https://testnets.opensea.io/) la cual nos permitirá visualizar las imágenes asociadas a nuestro DNFT.
 8. Debes tener presente que para visualizar los cambios en la testnet de Opensea, deberás manualmente hacer la actualización de la metadata. Para ello, ubícate en los 3 puntos del costado derecho superior y ahí encontrarás la opción que te mencioné.
-9. ¡Listo! Así habrás creado tu DNFT 😁.
+9. El problema con esto es que el cambio se haría de forma manual, para crear una automatización o que el cambio se ejecute según cierta acción del usuario, crearemos una interfaz de users con ReactJs, mira como hacerlo aquí:  
+10. ¡Listo! Así habrás creado tu DNFT 😁.
 ## Authors
 
 - [@Juminstock](https://twitter.com/Juminstock)
